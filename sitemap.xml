@@ -3,39 +3,39 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://onestop-techbook.github.io/blog/test/</loc>
+    <loc>https://onestop-techbook.github.io/c93-onestop-techbook/blog/test/</loc>
     <lastmod>2017-11-04T12:21:04+09:00</lastmod>
   </url>
   
   <url>
-    <loc>https://onestop-techbook.github.io/purpose/</loc>
+    <loc>https://onestop-techbook.github.io/c93-onestop-techbook/purpose/</loc>
     <lastmod>2017-11-04T12:21:04+09:00</lastmod>
   </url>
   
   <url>
-    <loc>https://onestop-techbook.github.io/blog/</loc>
-    <lastmod>2017-11-04T12:21:04+09:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://onestop-techbook.github.io/categories/</loc>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://onestop-techbook.github.io/purpose/</loc>
+    <loc>https://onestop-techbook.github.io/c93-onestop-techbook/blog/</loc>
     <lastmod>2017-11-04T12:21:04+09:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://onestop-techbook.github.io/tags/</loc>
+    <loc>https://onestop-techbook.github.io/c93-onestop-techbook/categories/</loc>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://onestop-techbook.github.io/</loc>
+    <loc>https://onestop-techbook.github.io/c93-onestop-techbook/purpose/</loc>
+    <lastmod>2017-11-04T12:21:04+09:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://onestop-techbook.github.io/c93-onestop-techbook/tags/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://onestop-techbook.github.io/c93-onestop-techbook/</loc>
     <lastmod>2017-11-04T12:21:04+09:00</lastmod>
     <priority>0</priority>
   </url>
