@@ -6,7 +6,6 @@ CHAPS:
 # 3.　この本の執筆環境について
   - 01-writing.re
 
-
 # 4.　技術書オンリー+コミケ　参加のメリット
   - 04-attendEvent.re
 
@@ -14,6 +13,7 @@ CHAPS:
   - 05-thinkScript.re
 
 # 6.　執筆環境について
+  - writing.re
 
 # 7.　印刷業者に頼むためのTips
 # 　・原稿出力に関して

@@ -2,6 +2,7 @@
 
   * Github
   * Re:View
+  * Docker
   * wercker（CI）
 
 この本ではGithubとRe:Viewを主軸として執筆しています。エンジニアに馴染みやすく多人数での執筆に向いています@<fn>{solo}。技術書典で出展されている同人誌ではよく見られる構成です。まずは執筆環境の概要を説明します。
@@ -9,7 +10,7 @@
 
 == 概要説明
 
-エンジニアが楽をすることに特化した環境です。面倒なことは全て丸投げしちゃいましょう。
+まずはそれぞれの概要をみていきましょう。
 
 === git / Github
 
@@ -51,53 +52,16 @@ Pull-Request（PR / プルリク）は Github の一番の特徴ともいえる�
 
 === Re:View
 
-Re:VIEW@<fn>{Re:VIEW}は現時点ではkmuto@<fn>{kmuto}さん他40人以上の開発者が参加するオープンソースな組み版ソフトです。実際にいくつもの出版社が採用しているプロユースのソフトですが、技術系同人誌でもよく使われるなど、プロもアマチュアも使うとても便利なソフトです。
 
-//footnote[Re:VIEW][@<href>{http://reviewml.org/}]
-//footnote[kmuto][@<href>{https://github.com/kmuto}]
 
-//quote{
-    Copyright c 2006-2016 Minero Aoki, Kenshi Muto, Masayoshi Takahashi, Masanori Kado.
-//}
 
-Re:VIEWでは、ASCIIで使われていた画期的な電子出版（Editor's Work Bench）の書式をベースにしつつ簡易化した記述方法で本を書きます。Markdownや他のWikiとは違う少し癖があるように感じられる記法ですが、組み版に特化していて必要十分な機能を持っています。
-
-おおまかに分けて、行単位の命令と文章の中に入れるインライン命令で構成されています。
-
-//listnum[list-test][リストのテスト]{
-#@mapfile(sample/01-writing/hoge.re)
-= Re:View はこんな感じでかきますよー の章
-
-== ほげー
-
-ふがー@<code>{@}<fn>{fuga}
-//footnote[fuga][ふがー]
-
-ぴよー
-
-@<code>{#@#} コメント
-#@end
-//}
-
-#@# リストの中でもRe:Viewのインライン命令を解釈してしまうので要注意
-#@# #@ で始まる行に関しても、プリプロセッサの都合があるので、こんな感じに
-
-@<list>{list-test}は実際のRe:VIEWのソースコードです。なんなら @<href>{https://github.com/onestop-techbook/c93-onestop-techbook} を開いてみてください。本書の原稿はRe:VIEWで書かれていて Github で公開されています。
-
-@<code>{=} で始まる行は見出しです。特に@<code>{=}のようなイコール記号が1つのものは章です。
-
-  * @<code>{=} 章
-  * @<code>{==} 節
-  * @<code>{===} 項
-  * @<code>{====} 段
-  * @<code>{=====} 小段
-
-@<code>{//} で始まる行はブロック命令です。
-
-@<code>{@}<code>{fuga}のような命令はインライン命令です。
 
 Re:VIEWの文法に関しての詳細は別の章に書きます。
 #@# FIXME @<chap>{......re}
+
+=== Docker
+
+Docker は、ミニマムなLinux実行環境をコンテナという独立した空間に閉じ込めて実行するものです。Docker について詳しく語り出すとインフラの本一冊書けるので詳しくは説明しませんが、Dockerfile というファイルさえ用意しておけば、Windows でも Mac でも Linux でも、同じ Linux コンテナが動きます。そして幸いなことに Re:VIEW 関連全てインストールされた Dockerfile が公開されているので、それを使うだけで構いません。
 
 === wercker
 
@@ -110,31 +74,30 @@ Re:VIEW で書かれた原稿は PDF や epub などの形式として出力（�
 //footnote[wercker][@<href>{http://www.wercker.com/}]
 //footnote[Oracle][オラクルと聞くとついつい身構える人もいるかもしれませんが、wercker はとてもよいサービスです。]
 
-CI サービスはどれを選んでも構いませんが、Docker 対応しているサービスが一番望ましいです。Re:VIEW の環境整備はわりと面倒ですが Docker があれば簡単なためです。
+CI サービスはどれを選んでも構いませんが、Docker 対応しているサービスが一番望ましいです。さきほども軽く説明したとおり、Re:VIEW の環境整備は Docker があれば簡単なためです。
 
 == 環境整備
 
-#@# これ、別の章に持って行く方がよい？
-
-Re:VIEWを手元で動かすには
+Re:VIEWを手元で動かすには最低限Rubyが必要になります。そして PDF を出力する場合は LaTeX も必要になります。Mac や Linux だとそれなりにノウハウも多くある程度楽ですが、Windows で環境を整える場合はかなり面倒です。Windows10 の Windows Subsystem for Linux を使えると大分マシです。ただ、どの環境にせよ、LaTeX はとにかく色々と面倒です。Docker を使わずに自前で環境構築をするなら、かなりの調査と研究が必要になるでしょう。
 
   * Rubyをインストールする（Re:VIEWがRubyで作られているため）
   * PDF変換をするために LaTeX をインストールする
 
-というのがそれぞれ必要になります。Mac や Linux だと大体簡単です。Windowsの場合は頑張るか、Docker を使うことになるでしょう。
+また、本書のリポジトリではJavaScriptが使われているためNode.jsがあるといいでしょう。
 
-また本書などをコンパイルするためにはさらにNode.jsがあるとよいでしょう。
-
-====[column] こらむ
+====[column] 執筆環境
 
 執筆環境ですが、筆者個人としては Visual Studio Code と Re:VIEW プラグインをオススメしておきます。
 
 ====[/column]
 
+=== Dockerをインストールする
 
-=== Dockerを使う
+Docker for Windows@<fn>{docker-for-windows} や Docker for Mac@<fn>{docker-for-mac}を使うのが手っ取り早いでしょう。
+//footnote[docker-for-windows][@<href>{https://www.docker.com/docker-windows}]
+//footnote[docker-for-mac][@<href>{https://www.docker.com/docker-mac}]
 
-MacやLinuxの場合でもDockerを使うのが手っ取り早いです。なぜならRubyもLaTeXも気にしなくていいからです。
+=== Dockerで動かす
 
 //cmd{
 $ docker run --rm -v `pwd`:/work vvakame/review /bin/sh -c "cd /work/articles ; review-pdfmaker config.yml"
@@ -142,18 +105,37 @@ $ docker run --rm -v `pwd`:/work vvakame/review /bin/sh -c "cd /work/articles ; 
 
 @<tt>{/work/articles} という指定はこの本でのディレクトリ構成の物です。
 
-=== Rubyをインストールする
+たったこれだけです。なんと簡単なことでしょうか。
 
+=== Macで環境を構築する
 
-=== LaTeX をインストールする
+基本的にはHomebrew@<fn>{Homebrew}とbrewcaskを活用するといいでしょう。
+//footnote[Homebrew][@<href>{https://brew.sh/index_ja.html}]
+//footnote[brewcask][@<href>{https://caskroom.github.io/}]
 
 //cmd{
 $ brew cask install mactex
 //}
 
-=== Node.jsをインストールする
+あとはRubyは好きな方法でインストールしておくといいでしょう。システムにすでに入っているものを使う、Homebrewでインストールする、rbenvを使う、anyenv+rbenvを使うなどの手段があります。
+//footnote[rbenv][@<href>{https://github.com/rbenv/rbenv}]
+//footnote[anyenv+rbenv][@<href>{https://github.com/riywo/anyenv}]
+
+=== Windows Subsystem for Linux （Windows10）で環境を構築する
+
+#@# 自分でも実験してみるつもりだけど、誰か書ける人かいてくれると嬉しい by @erukiti
+
+=== Windows で環境を構築する
+
+TeXのインストールには、TeXLive@<fn>{TeXLive}を使うのが最近の鉄板のようです。
+//footnote[TeXLive][@<href>{https://user.ecc.u-tokyo.ac.jp/users/user-15826/wiki/?TeX/Install}]
+
+Rubyのインストールには、RubyInstaller@<fn>{ruby-installer2}を使うといいようです。
+//footnote[ruby-installer2][@<href>{https://github.com/oneclick/rubyinstaller2/releases}]
 
 === 各種サーバー設定
+
+
 
 ====[column] 技術書はWordでも書ける　；親方
 
