@@ -233,7 +233,7 @@ Start Command Prompt with Rubyを開いた状態で次のコマンドを実行�
 //cmd{
 > gem install review
 //}
-図の様な画面が表示されて、Re:Viewがインストールされます。
+図のような画面が表示されて、Re:Viewがインストールされます。
 これだけでインストールは終わりです。
 簡単だったでしょ？
 //image[ReviewWin7_reviewinst][Re:Viewのインストール][scale=0.9]{
@@ -267,7 +267,8 @@ reviewSampleというフォルダを開き、
 コマンドプロンプトはファイル名を補完してくれるので、C:\Ruまで入力してTabキーを押すと、C:\Ruby24-x64が候補として表示されます。
 そのまま\bを入力してTabキー、\sを入力してTabキーを押すことで、最小のキー入力でコマンドを実行できます。
 後は前の説明に沿って@<tt>{review-pdfmaker}を実行してください。
-途中までは順調に進んでいきますが、book.dvi->book.pdfとなっている直後に終了し、pdfが作られません。
+途中までは順調に進んでいきますが、book.dvi->book.pdfとなっている直後に終了し、pdfが作られません@<fn>{FONTERROR}。
+//footnote[FONTERROR][もし何事もなくpdfファイルが作られていたら、以降の説明は読み飛ばして次の小節に進んでも問題ありません。]
 //image[ReviewWin7_pdfmake_2_progress][review-pdfmakerによる処理の実行画面][scale=0.9]{
 //}
 //image[ReviewWin7_pdfmake_3_error][pdf作成時のエラーメッセージ][scale=0.9]{
@@ -332,7 +333,7 @@ reviewSampleのフォルダにbook.pdfが作られていることが確認でき
 //image[ReviewWin7_pdfmake_4_result][作成されたpdfファイル][scale=0.5]{
 //}
 
-まとめると、Windows 7でRe:View環境を構築する手順は次の通りです。
+まとめると、Windows 7でRe:View環境を構築する手順は次のとおりです。
 
  1. TeXをインストール
  2. Rubyをインストール
@@ -341,7 +342,107 @@ reviewSampleのフォルダにbook.pdfが作られていることが確認でき
 
 なお、各ソフトのインストールは一度だけでよいのですが、@<ttb>{config.yml}@<b>{にオプションを追記するのは原稿毎に行う必要があることに注意してください。}
 
-== Visual Studio Codeによる執筆とRe:View用拡張機能の利用
+== Visual Studio CodeのRe:View用拡張機能と編集作業
+Re:Viewが使えるようになったので、次は快適な執筆環境を整えましょう。
+執筆に使うエディタには、Microsoft社が公開しているVisual Studio Code（以降、VSCode）がよいと思います。
+多機能なわりに動作が軽く、しかも無料です。
+Re:View用の拡張機能をインストールすると、Re:Viewの命令をハイライトしてくれたり、VSCode内ででき上がりを見れたりします。
+ここでは、VSCodeにRe:View用の拡張機能を導入する方法と、VSCode内からpdfを作る方法を説明します。
 
+==={ReviewWin7-VSCodeExt} Re:View用拡張機能のインストール
+拡張機能のインストールは、VSCodeの拡張機能のメニューから行います。
+VSCodeのウィンドウ左側を、縦に並んでいるアイコンのうち、四角に切れ込みが入ったような図柄のアイコンが拡張機能です。
+（どのようなアイコン化は図を参照してください）
+このアイコンをクリックすると、現在インストールされている拡張機能と、拡張機能を検索するためのテキストボックスが表示されます。
+メニューバーの表示→拡張機能を選択することでも表示することができます。
+検索用のテキストボックスに「review」と入力すると、いくつか候補が表示されます。
+そのうちatsushieoさんのRe:VIEW（Re:VIEW language support for Visual Studio Code）をインストールします。
+インストールは簡単で、緑色で塗りつぶされているインストールボタンをクリックするだけです。
+//image[ReviewWin7_vscode_1_extension][Visual Studio CodeへのRe:View用拡張機能の追加][scale=0.5]{
+//}
 
+==={ReviewWin7-VSCodeEdit} VSCodeによる編集作業
+Re:View用の拡張機能をインストールできたら、具体的な編集作業の流れを見ていきましょう。
+編集するファイル（config.ymlやcatalog.yml, *.re等）を一つずつVSCodeに読み込ませてもよいのですが、
+原稿はフォルダにまとまって置かれているので、フォルダをまるごとVSCodeで開き、VSCodeから編集するファイルを拓くことにします。
+この方が開くファイルを間違えたりしないので便利です。
+ここでは、先ほどRe:Viewの動作確認に使ったreviewSampleを使い、
+編集作業からpdfの出力までを説明します。
 
+ファイル→フォルダーを開くクリックし、開きたいフォルダ（reviewSample）を選択します。
+//image[ReviewWin7_vscode_2_openfolder][Visual Studio Codeにフォルダを追加するメニュー][scale=0.7]{
+//}
+//image[ReviewWin7_vscode_3_selectfolder][フォルダの選択][scale=0.7]{
+//}
+すると、VSCodeのエクスプローラー（ウィンドウ左、縦に並んでいるアイコンの一つ目）にフォルダが表示され、
+中に置かれているファイルやフォルダが一覧で表示されます。
+ここに見えているファイル名をシングルクリックすると、そのファイルがVSCodeに読み込まれ、編集できるようになります。
+//image[ReviewWin7_vscode_4_workspace][Visual Studio Codeに読み込まれたフォルダとファイル][scale=0.7]{
+//}
+
+reviewSample.reをクリックして開き、編集をします。
+テストという名前の章を一つ設けてみました。
+//image[ReviewWin7_vscode_5_edit][Visual Studio Codeでのファイル編集画面][scale=0.9]{
+//}
+そして、ここからがVSCodeの便利なところで、
+ウィンドウ右上にあるShow previewをクリックするとウィンドウが分割され、右に仕上がりが表示されるのです。
+もしRe:Viewの命令に何か間違いがあると、仕上がりが表示されなくなり、
+原稿の間違っている箇所を赤の下線で指摘してくれます。
+//image[ReviewWin7_vscode_6_preview][ファイルのプレビュー][scale=0.9]{
+//}
+
+間違いもないのでreview-pdfmakerを使ってpdfを出力しましょう。
+いちいちスタートメニューからコマンドプロンプトを立ち上げなくても、
+表示→統合ターミナルをクリックするとウィンドウ下部にコマンドプロンプトが表示されます。
+//image[ReviewWin7_vscode_7_runterminal][ターミナルの起動][scale=0.7]{
+//}
+//image[ReviewWin7_vscode_8_terminal][ターミナルでのRubyの有効化][scale=0.7]{
+//}
+
+先ほどの説明と同じように、Rubyを使えるようにコマンドを実行します。
+//cmd{
+> C:\Ruby24-x64\bin\setrbvars.cmd
+//}
+
+その後、review-pdfmakerを実行してpdfファイルを作ります。
+コマンドは次のように実行するのでしたね。
+//footnote[VSCODEREVIEW][先ほどはconfig_W32TeX.ymlを使っていましたが、より一般的な説明のためにconfig.ymlを使っています。先の説明に沿ってdvioptionsが追記されています。]
+//cmd{
+> review-pdfmaker config.yml
+//}
+//image[ReviewWin7_vscode_10_pdfmaker][Re:Viewによるpdfファイルの作成][scale=0.7]{
+//}
+
+エラーが発生しなければbook.pdfが作られます。
+これも実はコマンドプロンプトから開くことができて、ファイル名を入力するとそのファイルが開かれます。
+//cmd{
+> book.pdf
+//}
+
+この章の著者の環境では、AdobeのAcrobatが起動し、book.pdfが表示されます。
+pdfファイルを表示したままにしておくと、次にRe:Viewでpdfファイルを作成するときに
+pdfファイルを上書きできなくなるので、編集作業に戻る、あるいはpdfファイルを作成するタイミングで開かれているpdfファイルを閉じるようにしましょう。
+残念ながら、VSCodeでpdfファイルを開こうとすると、サポートされていないというメッセージが表示されます。
+
+=={ReviewWin7_summary} この章のまとめ
+この章では、Windows 7でRe:View環境を構築して、Visual Studio Codeで編集してpdfを出力するところまで説明しました。
+事前に情報を集めてめんどくさいなぁと思っていた方は、意外に簡単で拍子抜けしたのではないかと思います。
+締切（とストレージ）の都合上、TeX Liveを試せなかったのは残念ですが、問題なく使えるのではないかと予想しています。
+もし、本書をお読みになった方で知見をお持ちの方は、ぜひ本書の改訂版を一緒に作りましょう！
+
+Windows 7にRe:View環境を構築する方法が（実は）たくさんあり、この手順を見つけるまでには紆余曲折がありました@<fn>{WIN10ENV}。
+//footnote[WIN10ENV][Windows 10の場合は、Linux Subsystem on Windowsが利用できるので、Dockerを簡単に利用できます。]
+
+ 1. インターネット上の説明に沿ってDocker for Windowsを使う方法は、仮想化環境を動かすためのVirtualBoxがVMWareと相性が悪いので使えませんでした。
+ 2. VMWareにLinuxをインストールしてそこにRe:View環境を構築する方法は簡単に成功しましたが、執筆作業がWindowsとLinuxにまたがってしまうのでやり取りが億劫でした。また、仮想OSのために30GBほど消費しますし、ノートPCではバッテリーの消費が多くなり、出先で執筆ができません。
+ 3. CygwinにRe:Viewをインストールする方法では、Cygwin自体がかなり容量を消費しますし、ファイルパスの設定が非常にややこしいことになります。
+ 4. Windows版のTeXとRubyをインストールしてターミナルから使う方法は一切情報がありませんでしたが、やってみるとうまくいきました。
+ 
+Windows版のTeXとRubyを使う方法は、最初は誰もやっていないので何か根本的な問題があるのかと考えていましたが、
+Ruby for Windowsをインストールして、gemでRe:Viewがインストールできた段階で現実味を帯びてきました。
+途中、ヒラギノフォントを読みにいくエラーを回避できなくて詰まりましたが、dvioptionsを見つけてエラーを回避できました。
+やってみるものですね。
+
+この章の著者はこういう試行錯誤を楽しむことができますが、技術書を書くためにRe:Viewを使おうとする人全員にそのような試行錯誤を要求するのは酷というものでしょう。
+そのために本書があるわけですから、本書を読んだ方（この章では特にWindows 7ユーザー）が環境構築に詰まることなく、
+技術書執筆に集中できるようになれば、それに勝る喜びはありません。
