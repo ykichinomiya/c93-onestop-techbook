@@ -15,15 +15,20 @@ CHAPS:
 # 6.　執筆環境について
   - writing.re
 
-# Re:Viewのインストール（Windows7編）
+# Re:VIEWのインストール（Windows7編）
   - sec-windows7-installation.re
 
 # 7.　印刷業者に頼むためのTips
 # 　・原稿出力に関して
   - book-style.re
+# Wordの簡単な入門
+  - sec-word-intro.re
   - sec-image.re
+# 図を埋め込む（Windows 7編）
+  - sec-image-win7.re
   - sec-nombre.re
   - 07-howToOrder.re
+  
 
 # 8.　当日までの準備
 # 　・持ち物リスト
