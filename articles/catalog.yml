@@ -21,6 +21,9 @@ CHAPS:
 # Re:VIEWのインストール（Windows7編）
   - sec-windows7-installation.re
 
+# 表紙を作る
+  - frontcover.re
+
 # 7.　印刷業者に頼むためのTips
 # 　・原稿出力に関して
   - book-style.re
@@ -39,10 +42,12 @@ CHAPS:
   - prepare.re
 
 # 9.　当日朝、開場までの準備
+  - 09-morning.re
 
 # 10.　開催中のTips
 # 　・イベント中のオペレーション体制
 # 　・ワンオペ時の回し方
+  - 10-eventTips.re
 
 # 11.　イベント終わってからやること
 
