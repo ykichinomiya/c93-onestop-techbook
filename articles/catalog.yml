@@ -73,6 +73,7 @@ APPENDIX:
 
 POSTDEF:
 # 16.　あとがき
+  - postscript.re
 
 # 17.　執筆者一覧
   - contributors.re
