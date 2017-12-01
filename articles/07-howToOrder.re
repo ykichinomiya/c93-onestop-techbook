@@ -58,3 +58,5 @@ Wordで入稿する場合の最も簡単な手順を以下に述べます。し�
 //footnote[CubeUtility][@<href>{http://www.cube-soft.jp/cubepdfutility/}]
 
 ====[/column]
+
+== ポスターを印刷する
