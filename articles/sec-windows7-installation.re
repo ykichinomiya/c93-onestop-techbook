@@ -391,7 +391,7 @@ Re:VIEW用の拡張機能をインストールできたら、具体的な編集�
 ここでは、先ほどRe:VIEWの動作確認に使ったreviewSampleを使い、
 編集作業からPDFの出力までを説明します。
 
-ファイル→フォルダーを開くクリックし（@<img>{ReviewWin7_vscode_2_openfolder}）、開きたいフォルダ（reviewSample）を選択します（@<img>{ReviewWin7_vscode_3_selectfolder}）。
+ファイル→フォルダを開くクリックし（@<img>{ReviewWin7_vscode_2_openfolder}）、開きたいフォルダ（reviewSample）を選択します（@<img>{ReviewWin7_vscode_3_selectfolder}）。
 //image[ReviewWin7_vscode_2_openfolder][Visual Studio Codeにフォルダを追加するメニュー][scale=0.6]{
 //}
 //image[ReviewWin7_vscode_3_selectfolder][フォルダの選択][scale=0.7]{
