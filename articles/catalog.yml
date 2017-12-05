@@ -3,9 +3,6 @@ PREDEF:
   - preface.re
 
 CHAPS:
-# 3.　この本の執筆環境について
-  - 01-writing.re
-
 # 4.　技術書オンリー+コミケ　参加のメリット
   - 04-attendEvent.re
 
@@ -27,12 +24,13 @@ CHAPS:
 # 7.　印刷業者に頼むためのTips
 # 　・原稿出力に関して
   - book-style.re
-# Wordの簡単な入門
-  - sec-word-intro.re
+
+# 図を埋め込む（MacOS編）
   - sec-image.re
 # 図を埋め込む（Windows 7編）
   - sec-image-win7.re
   - sec-nombre.re
+# 印刷所に発注する
   - 07-howToOrder.re
   
 
@@ -73,6 +71,11 @@ CHAPS:
 APPENDIX:
 
 # なにか付録があれば
+# 3.　この本の執筆環境について
+  - 01-writing.re
+
+# Wordの簡単な入門
+  - sec-word-intro.re
 
 POSTDEF:
 # 16.　あとがき
