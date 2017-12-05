@@ -474,7 +474,7 @@ RubyInstaller for WindowsでRubyをインストールして、gemでRe:VIEWが�
 このような試行錯誤を楽しむことができるなら別ですが、技術書を書くためにRe:VIEWを使おうとする人全員にそのような試行錯誤を要求するのは酷というものでしょう。
 そのために本書があるわけですから、本書を読んだ方（この章では特にWindows 7ユーザー）が環境構築に詰まることなく、
 技術書執筆に集中できるようになれば、それに勝る喜びはありません。
-//footnote[WIN10ENV][Windows 10の場合は、Linux Subsystem on Windowsが利用できるので、Dockerを簡単に利用できます。]
+//footnote[WIN10ENV][Windows 10の場合は、Windows Subsystem for Linuxが利用できるので、Dockerを簡単に利用できます。]
 
 ====[/column]
 
