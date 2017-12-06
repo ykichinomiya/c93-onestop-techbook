@@ -133,6 +133,8 @@ TeXのインストールには、TeXLive@<fn>{TeXLive}を使うのが最近の�
 Rubyのインストールには、RubyInstaller@<fn>{ruby-installer2}を使うといいようです。
 //footnote[ruby-installer2][@<href>{https://github.com/oneclick/rubyinstaller2/releases}]
 
+Windows 7にTeX（W32TeX）とRubyを使ってRe:VIEW環境を構築する方法を@<chap>{sec-windows7-installation}にまとめています。
+
 === 各種サーバー設定
 
 

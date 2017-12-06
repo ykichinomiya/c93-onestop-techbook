@@ -15,9 +15,6 @@ CHAPS:
 # 6.　執筆環境について
   - writing.re
 
-# Re:VIEWのインストール（Windows7編）
-  - sec-windows7-installation.re
-
 # 表紙を作る
   - frontcover.re
 
@@ -73,6 +70,9 @@ APPENDIX:
 # なにか付録があれば
 # 3.　この本の執筆環境について
   - 01-writing.re
+
+# Re:VIEWのインストール（Windows7編）
+  - sec-windows7-installation.re
 
 # Wordの簡単な入門
   - sec-word-intro.re
