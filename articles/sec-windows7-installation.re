@@ -24,6 +24,7 @@ TeXとRubyのどちらを先にインストールしても問題ありません�
 //footnote[TECHBOOK_WITH_REVIEW][Techbooster編著、技術書を書こう～初めてのRe:VIEW～、2015]
 
 =={ReviewWin7-Tex} TeXのインストール
+
 TeXと呼ばれるソフトには、実は色々なバリエーションがあります。
 オリジナルのTeXに色々な拡張が加えられているからです。
 Windowsで使えるTeXとしては、W32TeXやTeX Liveがあります。
@@ -31,6 +32,7 @@ Windowsで使えるTeXとしては、W32TeXやTeX Liveがあります。
 なぜかって？それはこの章の著者が元々W32TeXを使っていたからです:-)。
 
 ==={ReviewWin7-TeXDownload} インストーラーのダウンロード
+
 あべのりさんのページ@<fn>{TEX3}から、TeXインストーラ3をダウンロードしましょう。
 ページ下部に、執筆時点での最新版（0.85r3）へのリンクが張られているので、
 リンクをクリックしてzipファイルをダウンロードしましょう。
@@ -41,6 +43,7 @@ Windowsで使えるTeXとしては、W32TeXやTeX Liveがあります。
 //footnote[TEX3][@<href>{http://www.math.sci.hokudai.ac.jp/~abenori/soft/abtexinst.html}]
 
 ==={ReviewWin7-TeXInst} インストールの実行
+
 ダウンロードしたらzipファイルを解凍しましょう。
 解凍されたabtexinstフォルダの中にあるabtexinst.exeがインストーラーの本体です。
 abtexinst.exeをダブルクリックするとインストーラーが起動して@<img>{ReviewWin7_texinst_1_start}に示す画面が現れるので、順を追ってインストールしていきましょう。
@@ -100,6 +103,7 @@ TeXWorksはインストールしないので、チェックを外して次へ進
 //}
 
 ==={ReviewWin7-TexOthers} Ghostscritp, GSview, dvioutのインストール
+
 TeXのインストールが終わるとGhostscriptのインストールが始まります（@<img>{ReviewWin7_gsinst_1_start}）。
 [Next>]を押してライセンス条項（@<img>{ReviewWin7_gsinst_2_license}）を読み、同意できるなら[I Agree]を押し、
 インストールするフォルダを確認して[Install]を押す（@<img>{ReviewWin7_gsinst_3_path}）とインストール完了画面が表示されます（@<img>{ReviewWin7_gsinst_4_finish}）。
@@ -151,6 +155,7 @@ Show Readmeのチェックを外して[Finish]ボタンを押すとGhostscript�
 //}
 
 ==={ReviewWin7-TeXConfirm} 動作確認
+
 PCが起動したら、TeXが使えるようになっているか確認しましょう。
 TeXをインストールしたフォルダ（C:\TeX、皆さんがフォルダを変更していればそのフォルダ）を開き、
 @<img>{ReviewWin7_texinst_11_cmd}に示すようにアドレスバーにcmdと入力してエンターキーを押すと、コマンドプロンプトが起動します。
@@ -182,6 +187,7 @@ This is e-pTeX, Version 3.14159265-p3.7.1-161114-2.6 (sjis) (TeX Live 2016/W32Te
 =={ReviewWin7-Ruby} Rubyのインストール
 
 ==={ReviewWin7-RubyDownload} インストーラーのダウンロード
+
 無事にTeXがインストールできたら、次にRubyをインストールします。
 WindowsにRubyをインストールするには、RubyInstaller for Windowsが手軽です。
 RubyInstallerのサイト@<fn>{RUBYFORWIN}にアクセスして、ページ上部にあるDownloadというリンクをクリックし、
@@ -192,6 +198,7 @@ RubyInstallerのサイト@<fn>{RUBYFORWIN}にアクセスして、ページ上�
 //footnote[RUBYFORWIN][@<href>{https://rubyinstaller.org}]
 
 ==={ReviewWin7-RubyInst} インストール
+
 ダウンロードしたインストーラーは実行形式（.exeファイル）なので、
 ダブルクリックするとインストールが始まります（@<img>{ReviewWin7_rubyinst_1_license}）。
 ライセンス条項を読んで同意するなら I accept the Licenseを選択して[Next]ボタンを押し、
@@ -211,6 +218,7 @@ Run 'risk install' ~と書いてあるチェックを外して[Finish]ボタン�
 //}
 
 ==={ReviewWin7-RubyConfirm} 動作確認
+
 Rubyはコマンドプロンプトから呼び出します。
 @<img>{ReviewWin7_rubyinst_5_startmenu}のようにスタートメニューからすべてのプログラムを展開し、Ruby 2.4.2 ~と書いてあるフォルダを開き、
 Start Command Prompt with Rubyを実行します（@<img>{ReviewWin7_rubyinst_6_prompt}）。
@@ -237,6 +245,7 @@ ruby 2.4.2p198 (2017-09-14 revision 59899) [x64-mingw32]
 //footnote[RUBYVER][インストールしたバージョンによって表示は変わります。]
 
 =={ReviewWin7-ReView} Re:VIEWのインストール
+
 Re:VIEWは、Rubyを使ってコマンドからインストールします。
 Start Command Prompt with Rubyを開いた状態で次のコマンドを実行します。
 //cmd{
@@ -362,6 +371,7 @@ warningは出ますが順調に変換が進んでいきます。
 //footnote[FONTERROR][もし何事もなくPDFファイルが作られていたら、以降の説明は読み飛ばして次の小節に進んでも問題ありません。]
 
 == Visual Studio CodeのRe:VIEW用拡張機能と編集作業
+
 Re:VIEWが使えるようになったので、次は快適な執筆環境を整えましょう。
 執筆に使うエディタには、Microsoft社が公開しているVisual Studio Code（以降、VSCode）がよいと思います。
 多機能なわりに動作が軽く、しかも無料です。
@@ -369,6 +379,7 @@ Re:VIEW用の拡張機能をインストールすると、Re:VIEWの命令をハ
 ここでは、VSCodeにRe:VIEW用の拡張機能を導入する方法と、VSCode内からPDFを作る方法を説明します。
 
 ==={ReviewWin7-VSCodeExt} Re:VIEW用拡張機能のインストール
+
 拡張機能のインストールは、VSCodeの拡張機能のメニューから行います。
 VSCodeのウィンドウ左側を、縦に並んでいるアイコンのうち、四角に切れ込みが入ったような図柄のアイコンが拡張機能です。
 （どのようなアイコン化は図を参照してください）
@@ -381,6 +392,7 @@ VSCodeのウィンドウ左側を、縦に並んでいるアイコンのうち�
 //}
 
 ==={ReviewWin7-VSCodeEdit} VSCodeによる編集作業
+
 Re:VIEW用の拡張機能をインストールできたら、具体的な編集作業の流れを見ていきましょう。
 編集するファイル（config.ymlやcatalog.yml, *.re等）を一つずつVSCodeに読み込ませてもよいのですが、
 原稿はフォルダにまとまって置かれているので、フォルダをまるごとVSCodeで開き、VSCodeから編集するファイルを拓くことにします。
@@ -448,6 +460,7 @@ PDFファイルを上書きできなくなるので、編集作業に戻る、�
 //footnote[VSCODEREVIEW][先ほどはconfig_W32TeX.ymlを使っていましたが、より一般的な説明のためにconfig.ymlを使っています。先の説明に沿ってdvioptionsが追記されています。]
 
 =={ReviewWin7_summary} この章のまとめ
+
 この章では、Windows 7でRe:VIEW環境を構築して、Visual Studio Codeで編集してPDFを出力するところまで説明しました。
 事前に情報を集めてややこしいなぁと思っていた方は、意外に簡単で拍子抜けしたのではないかと思います。
 締切（とストレージ）の都合上、TeX Liveを試せなかったのは残念ですが、問題なく使えるのではないかと予想しています。
@@ -463,7 +476,7 @@ Windows 7にRe:VIEW環境を構築する方法は（実は）たくさんあり�
  2. VMWareにLinuxをインストールしてそこにRe:VIEW環境を構築する方法。この方法は簡単に成功しましたが、執筆作業がWindowsとLinuxにまたがってしまうのでやり取りが億劫でした。また、仮想OSのために30GBほど消費しますし、ノートPCではバッテリーの消費が多くなり、出先で執筆ができません。
  3. CygwinにRe:VIEWをインストールする方法。この方法では、Cygwin自体がかなり容量を消費しますし、ファイルパスの設定が非常にややこしいことになります。
  4. Windows版のTeXとRubyをインストールしてターミナルから使う方法。この方法は情報がありませんでしたが、やってみるとうまくいきました。
- 
+
 Windows版のTeXとRubyだけを使う方法は情報が見つからなかったので、何か根本的な問題があるのかと考えていましたが、
 RubyInstaller for WindowsでRubyをインストールして、gemでRe:VIEWがインストールできた段階で現実味を帯びてきました。
 途中、ヒラギノフォントを読みにいくエラーを回避できなくて詰まりましたが、dvioptionsを見つけてエラーを回避できました。
