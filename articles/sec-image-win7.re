@@ -7,6 +7,7 @@
 OSやソフトが変わるとできることも変わってきますので、内容が簡略化され、Windowsに特化した情報が加筆されています。
 
 =={sec-image-win7-install} PowerPointについて
+
 PowerPointはプレゼンテーション用のスライド作成およびプレゼンテーションを行うソフトウェアです@<fn>{PPT_LOVE}。
 Officeシリーズを購入すると大抵はバンドルされていますが、Office Personalには含まれていません@<fn>{OFFICE_PRODUCT}。
 単体で購入することもできますが、かなり割高です@<fn>{PPT_PRICE}。
@@ -18,6 +19,7 @@ Officeシリーズを購入すると大抵はバンドルされていますが�
 //footnote[PPT_INIT][意外にこれをやらない人が多いのです。]
 
 =={sec-image-win7-draw} PowerPointで作図する
+
 PowerPointで作図してみましょう。
 PowerPointを起動すると、タイトルスライドのみの新規スライドが表示されます。
 スライドを右クリックし、レイアウトを白紙に変更しましょう@<fn>{PPT_INIT}。
@@ -41,6 +43,7 @@ PowerPointを起動すると、タイトルスライドのみの新規スライ�
 //footnote[AFFIRMED_VICTORY_TRIANGLE][PowerPointでは円弧矢印を狙った通りに描くのがややこしいので、直線矢印にしました。これではサイクルというよりトライアングルですね。]
 
 =={sec-image-win7-png} 図をPNG画像として保存する
+
 PowerPointで作成した図形を画像に変換する方法は三通りあります。
 一つ目は、スライドを画像として保存する方法です。
 名前を付けて保存する際にファイルの種類をjpg, png, tiff, bmpのいずれかにすることで、スライド全て、あるいは1枚だけが画像に変換されて保存されます。
@@ -62,6 +65,7 @@ PowerPointで作成した図形を画像に変換する方法は三通りあり�
 図形はimagesという名前のフォルダに保存し、@<chap>{sec-image}の@<list>{sec-image|review-image1}で説明されているRe:VIEW命令を使って原稿に埋め込みます。
 
 =={sec-image-win7-width} 図形の幅を設定する
+
 Re:VIEWの原稿に図を埋め込んだ際、思ったより大きくなった場合は、三通りの方法で大きさを調整できます。
 一つ目は、Re:VIEWの命令で画像を埋め込む際に画像の倍率を指定する方法です。
 これは@<hd>{sec-image|sec-image-width}、@<list>{sec-image|review-image2}を参照してください。
@@ -108,6 +112,7 @@ Re:VIEWの原稿に図を埋め込んだ際、思ったより大きくなった�
 いちいち四角形を置くより三つ目の方が楽なように感じますが、図形を高解像度にするときの手間が変わってきます。
 
 =={sec-image-win7-dpi} 出力される画像の解像度を上げる
+
 前小節の方法で変換された画像の解像度は、全て96 DPI@<fn>{WHAT_IS_DPI}です。
 これはPowerPointの標準設定のようです@<fn>{STD_DPI}。
 @<chap>{sec-image}では、三通りの方法で解像度を変更していましたが、そのうち三つ目（@<tt>{ImageMagick}の@<tt>{convert}コマンドを使う方法）はWindowsでも可能です。
@@ -177,6 +182,7 @@ Windows版のPowerPointにはサイズの制約があり、上限は307 DPI、30
 //footnote[PPT_RESOLUTION][@<href>{https://support.microsoft.com/ja-jp/help/827745/how-to-change-the-export-resolution-of-a-powerpoint-slide}]
 
 =={sec-image-win7-switch} 低解像度画像と高解像度画像の切り替え
+
 @<chap>{sec-image}でも指摘されているように、画像の解像度が高くなるとファイルサイズが増え、原稿のPDFファイルを作るのに時間がかかるようになります。
 この問題に対して、@<chap>{sec-image}では原稿執筆中に低解像度の画像を参照するようにし、
 原稿が完成して印刷用のPDFを作る時にだけ高解像度の画像を参照する方法が提案されています。
