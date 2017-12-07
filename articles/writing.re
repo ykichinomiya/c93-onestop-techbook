@@ -34,7 +34,7 @@ Re:VIEW@<fn>{Re:VIEW}は現時点ではkmuto@<fn>{kmuto}さん他40人以上の�
 
 後者は実際にコミケC89で販売されていた「技術書をかこう！　はじめてのRe:VIEW　改訂版」という本のソースコードに該当します。
 
-本書は、ReVIEW-Templateをベースに書かれています。
+本書は、@<tt>{ReVIEW-Template}をベースに書かれています。
 
   * @<href>{https://github.com/onestop-techbook/c93-onestop-techbook}
 
