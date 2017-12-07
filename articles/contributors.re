@@ -40,3 +40,9 @@
  サークル名：暗黙の型宣言 @implict_none @<href>{https://twitter.com/implict_none}
 
  Fortranと数値計算に関する同人誌を執筆するためのサークルを運営。蓄積した情報をまとめる機会と位置づけて技術書典２に参加。好奇心が駆動力。ネタが現在進行形で増え続けているので執筆が追いつかないことが目下の悩み。
+
+ * Yuki Ichonomiya @yk_ichinomiya @<href>{https://twitter.com/yk_ichinomiya}
+
+サークル名：clear-mint @<href>{http:clear-mint.net/}
+
+昼は1人情シスとして働きつつ、夜な夜な創作イラストを描いています。技術書典のほか、コミケ、コミティア等で活動。「木村拓哉タイムリープ説」の発生源の人。
