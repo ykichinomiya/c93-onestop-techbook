@@ -1,5 +1,7 @@
 = この本の執筆環境について
 
+じつは本書はGithubで全て公開されています。@<href>{https://github.com/onestop-techbook/c93-onestop-techbook}というリポジトリが、本書のソースコードなのです。環境を整えれば、本書のPDFやepubを生成できるのです。
+
   * Github
   * Re:View
   * Docker
@@ -50,15 +52,6 @@ Pull-Request（PR / プルリク）は Github の一番の特徴ともいえる�
 
 ====[/column]
 
-=== Re:View
-
-
-
-
-
-Re:VIEWの文法に関しての詳細は別の章に書きます。
-#@# FIXME @<chap>{......re}
-
 === Docker
 
 Docker は、ミニマムなLinux実行環境をコンテナという独立した空間に閉じ込めて実行するものです。Docker について詳しく語り出すとインフラの本一冊書けるので詳しくは説明しませんが、Dockerfile というファイルさえ用意しておけば、Windows でも Mac でも Linux でも、同じ Linux コンテナが動きます。そして幸いなことに Re:VIEW 関連全てインストールされた Dockerfile が公開されているので、それを使うだけで構いません。
@@ -76,6 +69,8 @@ Re:VIEW で書かれた原稿は PDF や epub などの形式として出力（�
 
 CI サービスはどれを選んでも構いませんが、Docker 対応しているサービスが一番望ましいです。さきほども軽く説明したとおり、Re:VIEW の環境整備は Docker があれば簡単なためです。
 
+@<href>{https://app.wercker.com/onestop-techbook/c93-onestop-techbook/runs}は実際に筆者がセットアップしたwerckerの結果表示ページです。
+
 == 環境整備
 
 Re:VIEWを手元で動かすには最低限Rubyが必要になります。そして PDF を出力する場合は LaTeX も必要になります。Mac や Linux だとそれなりにノウハウも多くある程度楽ですが、Windows で環境を整える場合はかなり面倒です。Windows10 の Windows Subsystem for Linux を使えると大分マシです。ただ、どの環境にせよ、LaTeX はとにかく色々と面倒です。Docker を使わずに自前で環境構築をするなら、かなりの調査と研究が必要になるでしょう。
@@ -84,12 +79,6 @@ Re:VIEWを手元で動かすには最低限Rubyが必要になります。そし
   * PDF変換をするために LaTeX をインストールする
 
 また、本書のリポジトリではJavaScriptが使われているためNode.jsがあるといいでしょう。
-
-====[column] 執筆環境
-
-執筆環境ですが、筆者個人としては Visual Studio Code と Re:VIEW プラグインをオススメしておきます。
-
-====[/column]
 
 === Dockerをインストールする
 
@@ -134,10 +123,6 @@ Rubyのインストールには、RubyInstaller@<fn>{ruby-installer2}を使う�
 //footnote[ruby-installer2][@<href>{https://github.com/oneclick/rubyinstaller2/releases}]
 
 Windows 7にTeX（W32TeX）とRubyを使ってRe:VIEW環境を構築する方法を@<chap>{sec-windows7-installation}にまとめています。
-
-=== 各種サーバー設定
-
-
 
 ====[column] 技術書はWordでも書ける　；親方
 
