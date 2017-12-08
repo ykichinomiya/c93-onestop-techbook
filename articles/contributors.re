@@ -1,6 +1,6 @@
 = 著者紹介
 
-発起人
+== 発起人
 
  * 親方 @oyakata2438 @<href>{https://twitter/oyakata2438}
 
@@ -8,9 +8,10 @@
 
 普段は「レーザープロジェクタを自作するためのいろいろ」というあたりのネタで執筆中。コミケと技術書典に出没。デッドライナーだけど、最近締め切りをでっち上げる方法を学んだので、本が書けるようになった。プログラミングは苦手。しめきりたのしー。(もうちょっと書くかも)
 
-執筆者
+== 執筆者
 
- * えるきち @erukiti @<href>{https://twitter.com/erukiti}
+@<icon>{erukiti}  えるきち @erukiti @<href>{https://twitter.com/erukiti}
+#@# icon は 80x80 の png
 
 サークル名：東京ラビットハウス @<href>{https://rabbit-house.tokyo/}
 
