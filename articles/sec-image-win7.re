@@ -219,7 +219,7 @@ Windowsでシンボリックリンクを作るには@<tt>{mklink}コマンドを
 //}
 PowerShellをコマンドプロンプトから呼ぶことで昇格することもできます。
 //cmd{
-> powershell -command "Smart-Process -Verb runas cmd"
+> powershell -command "Start-Process -Verb runas cmd"
 //}
 //noindent
 とてもとても残念なことに、同一コマンドプロンプト内で昇格することはできず、必ず新しいコマンドプロントが起動されます。
