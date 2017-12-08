@@ -43,6 +43,6 @@
 
  * Yuki Ichonomiya @yk_ichinomiya @<href>{https://twitter.com/yk_ichinomiya}
 
-サークル名：clear-mint @<href>{http:clear-mint.net/}
+サークル名：clear-mint @<href>{http://clear-mint.net/}
 
 昼は1人情シスとして働きつつ、夜な夜な創作イラストを描いています。技術書典のほか、コミケ、コミティア等で活動。「木村拓哉タイムリープ説」の発生源の人。
