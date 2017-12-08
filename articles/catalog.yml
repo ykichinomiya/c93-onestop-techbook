@@ -12,25 +12,27 @@ CHAPS:
 # 5.　ネタ出し法
   - 05-thinkScript.re
 
-# 6.　執筆環境について
-  - writing.re
+# 　・本のスタイル（サイズ、印刷方法）に関して考える。
+  - book-style.re
 
 # 表紙を作る
   - frontcover.re
 
-# 7.　印刷業者に頼むためのTips
-# 　・原稿出力に関して
-  - book-style.re
+# 6.　執筆環境について：本文を書くので、ここ。
+  - writing.re
 
 # 図を埋め込む（MacOS編）
   - sec-image.re
 # 図を埋め込む（Windows 7編）
   - sec-image-win7.re
+# ノンブルについて
   - sec-nombre.re
-# 印刷所に発注する
-  - 07-howToOrder.re
-  
 
+# 7.　印刷業者に頼むためのTips
+# 印刷所に発注するために必要なこと。
+  - 07-howToOrder.re
+
+# 準備をしよう。
 # 8.　当日までの準備
 # 　・持ち物リスト
 # 　・告知をしよう
@@ -48,9 +50,8 @@ CHAPS:
 
   - 11-afterevent.re
 
-# 12.　次の締切を手に入れよう
 
-# 13.　委託しよう
+# 13.　委託しよう　ZIN委託もここに書く
   - 13-booth.re
 
 # 14.　コミュニティに参加する
@@ -61,8 +62,7 @@ CHAPS:
 # 　・印刷費用と頒布価格、イベント収支
   - 15-aboutMoney.re
 
-# 16.　どこに入れるか迷い中のネタ
-# 　・表紙調達法
+# 16.　次の締切を手に入れる&モチベーションの話。
   - 16-tempTopix.re
 
 APPENDIX:
