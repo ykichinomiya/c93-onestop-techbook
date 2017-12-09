@@ -216,7 +216,8 @@ $ ln -s images_lowres images
 //}
 
 //noindent
-【Step2】高解像度用の画像から低解像度の画像を生成するタスクを、Rakefileに追加します。@<list>{rake-images-task}のRubyコードを、Rakefileのいちばん最後に追加してください。
+【Step2】高解像度用の画像から低解像度の画像を生成するタスクを、Rakefileに追加します。@<list>{rake-images-task}のRubyコード@<fn>{image-task-rb}を、Rakefileのいちばん最後に追加してください。
+//footnote[image-task-rb][https://github.com/onestop-techbook/c93-onestop-techbook/blob/master/articles/codes/rake-images.rbで取得できます。]
 
 //list[rake-images-task][高解像度用の画像から低解像度の画像を生成するRakeタスク][ruby]{
 desc "convert images"
