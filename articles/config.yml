@@ -59,8 +59,9 @@ aut: ["親方@oaykata2438"]
 # a-oth, oth: その他
 # a-pht, pht: 撮影責任者
 # a-pbl, pbl: 出版社（発行所）
-pbl: ケーナイン
+pbl: 親方Project
 # a-prt, prt: 印刷所
+prt: ケーナイン
 # prt: TechBooster
 # a-red, red: 項目の枠組起草者
 # a-rev, rev: 評論者
