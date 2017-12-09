@@ -116,3 +116,17 @@
 //}
 昼は1人情シスとして働きつつ、夜な夜な創作イラストを描いています。「木村拓哉タイムリープ説」の発生源の人。
 今回は多人数同時執筆に憧れて参加させていただきました。おかげさまで過去10年間の同人活動のなかでも最も超エキサイティングな経験となりました。楽しかったです。
+
+//embed{
+    \begin{minipage}{.1\linewidth}
+        \centering
+        \includegraphics[width=.75\linewidth]{images/contributors/mIiEPqG9_400x400.jpg}
+    \end{minipage}
+    \begin{minipage}{.89\linewidth}
+        病葉(わくらば) @sickleaf3 https://twitter.com/sickleaf3\\
+        サークル名：radiberry pi!
+        \end{minipage}
+    \hspace{1ex}
+//}
+ラジオを如何に快適に聴き、録音するかに心血を注いでいるうちにraspberry piを使った技術同人誌作成に辿り着いたエンジニアもどき。
+今回はRe:View環境に躓き、コラムを書く以外何も出来ず...この本を読んで出直します。
