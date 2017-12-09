@@ -17,6 +17,7 @@ CHAPS:
 
 # 表紙を作る
   - frontcover.re
+  - sec-cover.re
 
 # 6.　執筆環境について：本文を書くので、ここ。
   - writing.re
