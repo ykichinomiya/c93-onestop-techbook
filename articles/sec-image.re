@@ -19,8 +19,7 @@ Keynote.appをまだインストールしてない場合は、インストール
 
 これでKeynote.appがインストールされました。Finder.appで「アプリケーション」フォルダを見ると、「Keynote.app」があるはずです（@<img>{keynote-installed}）。
 
-//image[keynote-installed][「アプリケーション」フォルダに「Keynote.app」がインストールされる]{
-//}
+//image[keynote-installed][「アプリケーション」フォルダに「Keynote.app」がインストールされる]
 
 
 =={sec-image-draw} Keynote.appで作図する
@@ -34,8 +33,7 @@ Keynote.appを使って、図を描いてみましょう。
 
 //footnote[fn1][Re:VIEWで使う画像は「images」フォルダに入れるので、「スライドはimages.key、画像保存先はimages」というルールが分かりやすいでしょう。]
 
-//image[keynote-screenshot][Keynote.appでの作図例][scale=1.0]{
-//}
+//image[keynote-screenshot][Keynote.appでの作図例][scale=1.0]
 
 
 =={sec-image-save} 図をPNG画像として保存する
@@ -48,14 +46,12 @@ PDFに埋め込む図を作るには、次の手順がいいでしょう。
  2. Preview.appを起動し、Command+Nを押すと、先ほどコピーした内容を使って画像が作成されます（@<img>{keynote-newimage}）。
  3. そのままCommand+Sを押して、画像を保存します。保存先は「images」@<fn>{images}、フォーマットは「PNG」、ファイル名はたとえば「example1.png」にします。
 
-//image[keynote-newimage][Preview.appでCommand+Nを押すと、クリップボードの内容が画像になる][scale=0.5]{
-//}
+//image[keynote-newimage][Preview.appでCommand+Nを押すと、クリップボードの内容が画像になる][scale=0.5]
 
 これで画像が作成されました。この画像をRe:VIEWの原稿に埋め込むには、@<list>{review-image1}のようにします。ここで「@<code>{[example1]}」は拡張子を除いた画像ファイル名、「@<code>{[約束された...]}」の部分は図の説明文です。詳しくは「Re:VIEW フォーマットガイド」@<fn>{review-format-guide}を参照してください。
 
 //list[review-image1][Re:VIEWの原稿に画像を入れるためのテキスト]{
-  //image[example1][約束された勝利のサイクル]{
-  //}
+  //image[example1][約束された勝利のサイクル]
 //}
 
 //footnote[images][Re:VIEWでは、デフォルトでは「images」というフォルダに画像を入れることになっています。]
@@ -63,8 +59,7 @@ PDFに埋め込む図を作るには、次の手順がいいでしょう。
 
 実際に埋め込んでみると、@<img>{example1}のようになります。思ってたよりも大きく表示されてしまいますね。
 
-//image[example1][約束された勝利のサイクル]{
-//}
+//image[example1][約束された勝利のサイクル]
 
 
 =={sec-image-width} 画像の幅を設定する
@@ -74,14 +69,12 @@ Re:VIEWの原稿に画像を埋め込むと、思ったより大きく表示さ�
 1つ目は、Re:VIEWで画像の倍率を設定する方法です。たとえば@<list>{review-image2}のように「@<code>{[scale=0.5]}」を追加すると、0.5倍（つまり半分）の大きさで画像が埋め込まれます。
 
 //list[review-image2][Re:VIEWの原稿に画像を入れるためのテキスト]{
-  //image[example1][約束された勝利のサイクル][scale=0.5]{
-  //}
+  //image[example1][約束された勝利のサイクル][scale=0.5]
 //}
 
 実際に埋め込んでみると、@<img>{example2}のようになります。画像の大きさが半分になっていることが分かります。
 
-//image[example2][約束された勝利のサイクル（scale=0.5）][scale=0.5]{
-//}
+//image[example2][約束された勝利のサイクル（scale=0.5）][scale=0.5]
 
 2つ目は、透明な四角形を背景に埋め込むことで、画像そのものの大きさを変更する方法です。具体的には次のようにします。
 
@@ -90,15 +83,13 @@ Re:VIEWの原稿に画像を埋め込むと、思ったより大きく表示さ�
  3. ウィンドウ右上の「フォーマット」アイコン→「スタイル」タブを選びます。「塗りつぶし：塗りつぶしなし、枠線：枠線なし、シャドウ：シャドウなし」に変更します。
  4. ウィンドウ右上の「フォーマット」アイコン→「配置」タブを選びます。サイズを、たとえば「幅：900pt、高さ：300pt」に変更します（@<img>{keynote-bgbox}）。幅と高さは、紙面の幅と図形の高さに合わせて調整してください。
 
-//image[keynote-bgbox][図形の最背面に透明な四角形を置くことで、画像の幅と高さを指定する][scale=1.0]{
-//}
+//image[keynote-bgbox][図形の最背面に透明な四角形を置くことで、画像の幅と高さを指定する][scale=1.0]
 
 これで、画像の幅と高さを指定できました。ここまでできたら、画像に変換し直します。具体的には、Keynote.appでCommand+AとCommand+Cを押し、Preview.appに切り替えてからCommand+NとCommand+Sを押します。
 
 実際に原稿に埋め込むと、@<img>{example3}のようになりました（「@<code>{[scale=0.5]}」は指定していません）。画像の倍率を指定しなくても、ほどよい大きさで表示されていることが分かります。
 
-//image[example3][約束された勝利のサイクル（900@<m>{\times}300）]{
-//}
+//image[example3][約束された勝利のサイクル（900@<m>{\times}300）]
 
 どちらの方法でもうまくいきますが、個人的には2つ目の方法を勧めます。実際に試したところ、1つ目の方法では画像ごとに適切な倍率を指定するのが面倒でした。2つ目の方法だと作図している段階で大きさが分かるので、楽でした。
 
@@ -109,8 +100,7 @@ Re:VIEWの原稿に画像を埋め込むと、思ったより大きく表示さ�
 
 画像の解像度が低いことを確認してみましょう。Re:VIEWの原稿を「@<code>{rake pdf}」コマンドでコンパイルし、PDFを作成してPreview.appで表示します。そしてCommandキーを押しながら「+」キーを3、4回押してみてください。押すたびにPDFが拡大表示されることが分かります。PDFに埋め込まれた画像をこの方法で拡大表示すると、@<img>{low-resolution}のように文字はきれいだけど画像は荒いことが分かります。
 
-//image[low-resolution][PDFに埋め込んだ画像は、文字と比べて解像度が荒いことが分かる]{
-//}
+//image[low-resolution][PDFに埋め込んだ画像は、文字と比べて解像度が荒いことが分かる]
 
 ここで「画像の解像度が低い」という表現を使いましたが、正確には「画像のDPIが低い」といいます。DPI (Dot Per Inch)とは、1インチあたりのドット数を表します。これが低いと印刷したときに荒い画像になり、高いときれいな画像になります。
 
@@ -165,8 +155,7 @@ $ identify -verbose images/example1.png | egrep '(Resolution|Unit)'
 
 これらの方法によって解像度を360dpiに変更した画像を埋め込んだのが、@<img>{example4}です。非常に小さくなってしまいました。
 
-//image[example4][約束された勝利のサイクル(360dpi)]{
-//}
+//image[example4][約束された勝利のサイクル(360dpi)]
 
 この問題については次の章で説明します。
 
@@ -178,21 +167,18 @@ $ identify -verbose images/example1.png | egrep '(Resolution|Unit)'
  1. Keynote.appでスライドを開き、ウィンドウ右上の「書類」アイコン→「書類」タブを選び、下のほうにある「スライドのサイズ」で「カスタムのスライドサイズ...」を選びます。
  2. デフォルトでは「幅：1024pt、高さ：768pt」になっているので、それぞれ5倍して「幅：5120pt、高さ：3840pt」にして、「OK」ボタンを押します（@<img>{keynote-enlarge}）。
 
-//image[keynote-enlarge][スライドの大きさを5倍に広げる]{
-//}
+//image[keynote-enlarge][スライドの大きさを5倍に広げる]
 
 これでスライドの幅と高さが5倍になりました。それに伴って図形の大きさも5倍になったはずです。あとは、再度Command+AとCommand+Cを押し、Preview.appに切り替えてCommand+NとCommand+Sを押して画像を保存すると、幅と高さが5倍に引き伸ばされた画像ができます。またメニューから「ツール→サイズを調整...」を選んで、解像度を「360ピクセル/インチ」に変更してください@<fn>{dpi3}。
 //footnote[dpi3][実は画像の大きさが十分大きければ、72dpiでもきれいに印刷されます。しかし余計なトラブルを回避するためにも、高いDPIに変更しておくのがいいでしょう。]
 
 実際に原稿に埋め込むと、@<img>{example5}のようになりました。画像が小さくなっていないことが分かります。
 
-//image[example5][約束された勝利のサイクル（幅と高さが5倍）]{
-//}
+//image[example5][約束された勝利のサイクル（幅と高さが5倍）]
 
 またPDFファイルを拡大表示（Commandキーを押しながら「+」キーを押す）したのが、@<img>{high-resolution}です。以前のような画像の荒さが消えて、印刷に耐えうる解像度になっていることが分かります。
 
-//image[high-resolution][PDFに埋め込んだ画像の荒さが消え、印刷に耐える解像度になっている]{
-//}
+//image[high-resolution][PDFに埋め込んだ画像の荒さが消え、印刷に耐える解像度になっている]
 
 
 =={sec-image-toggle} コンパイル速度の低下を防ぐ
@@ -353,10 +339,9 @@ sys	0m3.838s
  * スクリーンショットを撮るなら、Retinaディスプレイの機種で撮ると解像度が高くなるのでお勧めです。たとえば、Retinaでない機種で撮ったスクリーンショットが72dpiで640@<m>{\times}480の大きさだとすると、同じスクリーンショットをRetinaディスプレイの機種で撮ると72dpiで1280@<m>{\times}960の大きさになります。DPIは同じですが縦と横がそれぞれ2倍の大きさになることがわかります。あとはこれを@<hd>{sec-image-dpi}で紹介した方法で144dpiに変更すれば、画像の表示サイズは同じままでより解像度が高くなるので、印刷するときれいに見えます。サンプルとして、Retina機種で撮ったスクリーンショットを@<img>{AboutThisMacbook}に、Retinaでない機種で撮ったスクリーンショットを@<img>{AboutThisMacbookAir}に載せておきますので、拡大表示して違いを見てみてください。
 //footnote[shadowless][ウィンドウスクリーンショットのシャドウを、なくすのではなく小さくする方法を探しましたが、見つかりませんでした。ご存知の方がいたらぜひ教えてください。]
 
-//image[AboutThisMacbook][Retinaディスプレイの機種で撮ったスクリーンショット]{
-//}
-//image[AboutThisMacbookAir][Retinaでない機種で撮ったスクリーンショット]{
-//}
+//image[AboutThisMacbook][Retinaディスプレイの機種で撮ったスクリーンショット]
+//image[AboutThisMacbookAir][Retinaでない機種で撮ったスクリーンショット]
+
 
 =={sec-image-conclusion} まとめ
 
