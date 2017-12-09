@@ -117,6 +117,20 @@
 昼は1人情シスとして働きつつ、夜な夜な創作イラストを描いています。「木村拓哉タイムリープ説」の発生源の人。
 今回は多人数同時執筆に憧れて参加させていただきました。おかげさまで過去10年間の同人活動のなかでも最も超エキサイティングな経験となりました。楽しかったです。
 
+//embed{
+    \begin{minipage}{.1\linewidth}
+        \centering
+        \includegraphics[width=.75\linewidth]{images/contributors/mIiEPqG9_400x400.jpg}
+    \end{minipage}
+    \begin{minipage}{.89\linewidth}
+        病葉(わくらば) @sickleaf3 https://twitter.com/sickleaf3\\
+        サークル名：radiberry pi!
+        \end{minipage}
+    \hspace{1ex}
+//}
+ラジオを如何に快適に聴き、録音するかに心血を注いでいるうちにraspberry piを使った技術同人誌作成に辿り着いたエンジニアもどき。
+今回はRe:View環境に躓き、コラムを書く以外何も出来ず...この本を読んで出直します。
+
 　
 //embed{
     \begin{minipage}{.1\linewidth}
@@ -132,3 +146,4 @@
 表紙のお手軽な作り方（macOS編）と、図の埋め込み（macOS編）と、ノンブルの章を書きました。書きたいことはまだあったのですが、締め切りに間に合いませんでした。無念なり。
 
 ところで「パンプキンシザーズ」という漫画、おもしろいのでぜひ買ってください。あと「オブジェクト指向言語解体新書」という同人誌、売れ残ってるのでぜひ買ってください。
+
