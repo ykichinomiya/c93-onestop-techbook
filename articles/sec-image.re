@@ -217,7 +217,9 @@ $ ln -s images_lowres images
 
 //noindent
 【Step2】高解像度用の画像から低解像度の画像を生成するタスクを、Rakefileに追加します。@<list>{rake-images-task}のRubyコード@<fn>{image-task-rb}を、Rakefileのいちばん最後に追加してください。
-//footnote[image-task-rb][https://github.com/onestop-techbook/c93-onestop-techbook/blob/master/articles/codes/rake-images.rbで取得できます。]
+//footnote[image-task-rb][https://github.com/onestop-techbook/c93-onestop-techbook/blob/master/articles/codes/rake-images.rbから取得できます。]
+
+#@# TODO: ソースコードを外部ファイルから読み込む方法
 
 //list[rake-images-task][高解像度用の画像から低解像度の画像を生成するRakeタスク][ruby]{
 desc "convert images"
@@ -288,12 +290,15 @@ $ rake pdf
 $ ln -sfn images_lowres images
 //}
 
-また@<list>{rake-toggle-task}のRubyコードをRakefileの末尾に追加すると、「@<code>{rake images:toggle}」だけで低解像度と高解像度を切り替えできるようになります。UNIXコマンドに不慣れな人はこちらを使うほうがいいでしょう。
+また@<list>{rake-toggle-task}のRubyコード@<fn>{image-toggle-rb}をRakefileの末尾に追加すると、「@<code>{rake images:toggle}」だけで低解像度と高解像度を切り替えできるようになります。UNIXコマンドに不慣れな人はこちらを使うほうがいいでしょう。
+//footnote[image-toggle-rb][https://github.com/onestop-techbook/c93-onestop-techbook/blob/master/articles/code/rake-toggle.rbから取得できます。]
+
+#@# TODO: ソースコードを外部ファイルから読み込む方法
 
 //list[rake-toggle-task][低解像度と高解像度を切り替えるRakeタスク][ruby]{
 namespace "images" do
 
-  desc "toggle directories ('images_{lowres,highres}')"
+  desc "toggle image directories ('images_{lowres,highres}')"
   task :toggle do
     link = File.readlink("images")
     rm "images"
