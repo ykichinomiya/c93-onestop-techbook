@@ -19,7 +19,7 @@ Keynote.appをまだインストールしてない場合は、インストール
 
 これでKeynote.appがインストールされました。Finder.appで「アプリケーション」フォルダを見ると、「Keynote.app」があるはずです（@<img>{keynote-installed}）。
 
-//image[keynote-installed][「アプリケーション」フォルダに「Keynote.app」がインストールされる]
+//image[keynote-installed][「アプリケーション」フォルダに「Keynote.app」がインストールされる][scale=0.9]
 
 
 =={sec-image-draw} Keynote.appで作図する
@@ -83,7 +83,7 @@ Re:VIEWの原稿に画像を埋め込むと、思ったより大きく表示さ�
  3. ウィンドウ右上の「フォーマット」アイコン→「スタイル」タブを選びます。「塗りつぶし：塗りつぶしなし、枠線：枠線なし、シャドウ：シャドウなし」に変更します。
  4. ウィンドウ右上の「フォーマット」アイコン→「配置」タブを選びます。サイズを、たとえば「幅：900pt、高さ：300pt」に変更します（@<img>{keynote-bgbox}）。幅と高さは、紙面の幅と図形の高さに合わせて調整してください。
 
-//image[keynote-bgbox][図形の最背面に透明な四角形を置くことで、画像の幅と高さを指定する][scale=1.0]
+//image[keynote-bgbox][図形の最背面に透明な四角形を置くことで、画像の幅と高さを指定する][scale=0.9]
 
 これで、画像の幅と高さを指定できました。ここまでできたら、画像に変換し直します。具体的には、Keynote.appでCommand+AとCommand+Cを押し、Preview.appに切り替えてからCommand+NとCommand+Sを押します。
 
@@ -167,7 +167,7 @@ $ identify -verbose images/example1.png | egrep '(Resolution|Unit)'
  1. Keynote.appでスライドを開き、ウィンドウ右上の「書類」アイコン→「書類」タブを選び、下のほうにある「スライドのサイズ」で「カスタムのスライドサイズ...」を選びます。
  2. デフォルトでは「幅：1024pt、高さ：768pt」になっているので、それぞれ5倍して「幅：5120pt、高さ：3840pt」にして、「OK」ボタンを押します（@<img>{keynote-enlarge}）。
 
-//image[keynote-enlarge][スライドの大きさを5倍に広げる]
+//image[keynote-enlarge][スライドの大きさを5倍に広げる][scale=0.9]
 
 これでスライドの幅と高さが5倍になりました。それに伴って図形の大きさも5倍になったはずです。あとは、再度Command+AとCommand+Cを押し、Preview.appに切り替えてCommand+NとCommand+Sを押して画像を保存すると、幅と高さが5倍に引き伸ばされた画像ができます。またメニューから「ツール→サイズを調整...」を選んで、解像度を「360ピクセル/インチ」に変更してください@<fn>{dpi3}。
 //footnote[dpi3][実は画像の大きさが十分大きければ、72dpiでもきれいに印刷されます。しかし余計なトラブルを回避するためにも、高いDPIに変更しておくのがいいでしょう。]
