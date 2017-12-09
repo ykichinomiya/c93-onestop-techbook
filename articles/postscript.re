@@ -22,4 +22,16 @@
 
 //}
 
+
+== Special Thanks:
+レビュアー
+
+双樹＠燃え尽き　＠sarah_souju　さん
+norakyuuri　マリオメーカーで計算機作る人　＠norakyuuri さん
+
+参考書
+わかばちゃんと学ぶGit使い方入門　湊川あい
+はじめてのRe:VIEW　Techbooster
+
+
 #@# ファイル名はpostscript.reとしました。言語のpsじゃないよｗ
