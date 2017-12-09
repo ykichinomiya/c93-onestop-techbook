@@ -38,16 +38,16 @@
 //table[printing-house][印刷所別のノンブル必須状況（2017年11月現在）]{
 印刷所		ノンブル	参考URL
 --------------------------------------------------
-日光企画	必須	http://www.nikko-pc.com/q&a/yokuaru-shitsumon.html#3-1
-ねこのしっぽ	非必須	https://www.shippo.co.jp/neko/faq_3.shtml#faq_039
-プリペラ	必須	https://www.pripela.com/user_data/document#genkou2
-栄光		非必須	http://www.eikou.com/qa/answer/66
-サンライズ	必須	http://www.sunrisep.co.jp/09_genkou/002genko_kiso.html
-金沢印刷	必須	http://www.kanazawa-p.co.jp/howtodata/howtodata_kihon-rule.html
-オレンジ工房	必須	http://www.orangekoubou.com/order/question.php
-太陽出版	必須	https://www.taiyoushuppan.co.jp/doujin/howto/nombre.php
-トム出版	必須	http://www.tomshuppan.co.jp/manual/data.html
-ポプルス	非必須	http://www.inv.co.jp/~popls/genkou/q_and_a.html#nombre
+日光企画	必須	@<href>{http://www.nikko-pc.com/q&a/yokuaru-shitsumon.html#3-1}
+ねこのしっぽ	非必須	@<href>{https://www.shippo.co.jp/neko/faq_3.shtml#faq_039}
+プリペラ	必須	@<href>{https://www.pripela.com/user_data/document#genkou2}
+栄光		非必須	@<href>{http://www.eikou.com/qa/answer/66}
+サンライズ	必須	@<href>{http://www.sunrisep.co.jp/09_genkou/002genko_kiso.html}
+金沢印刷	必須	@<href>{http://www.kanazawa-p.co.jp/howtodata/howtodata_kihon-rule.html}
+オレンジ工房	必須	@<href>{http://www.orangekoubou.com/order/question.php}
+太陽出版	必須	@<href>{https://www.taiyoushuppan.co.jp/doujin/howto/nombre.php}
+トム出版	必須	@<href>{http://www.tomshuppan.co.jp/manual/data.html}
+ポプルス	非必須	@<href>{http://www.inv.co.jp/~popls/genkou/q_and_a.html#nombre}
 //}
 
 もしノンブルが必須かどうか分からない場合は、「<印刷所名>　ノンブル」でインターネット検索してみてください。たいてい手がかりが見つかるはずです。
@@ -71,12 +71,12 @@
 
 =={nombre-howto} ノンブルのつけ方
 
-PDF原稿にノンブルを入れるには、iLovePDF (https://www.ilovepdf.com/ja) というWebサイトを使うのが便利です。
+PDF原稿にノンブルを入れるには、iLovePDF (@<href>{https://www.ilovepdf.com/ja}) というWebサイトを使うのが便利です。
 #@# このサイトでは、PDFを加工するさまざまな機能を提供しています。そのうちのひとつにページ番号を入れる機能があるので、これを利用してPDF原稿に（ページ番号ではなく）ノンブルを入れます。
 
 具体的な手順は次の通りです。なお初めて使うなら、4@<m>{\sim}8ページ程度のPDFを用意し、それで動作を確かめることを強く勧めます（詳しい理由は後述）。
 
- 1. https://www.ilovepdf.com/ja にアクセスし、「ページ番号」をクリックします（@<img>{ilovepdf-top}）。
+ 1. @<href>{https://www.ilovepdf.com/ja} にアクセスし、「ページ番号」をクリックします（@<img>{ilovepdf-top}）。
  2. 「PDFファイルを選択」ボタンを押してPDFファイルを指定するか、Finder.appからPDFファイルを「PDFファイルを選択」ボタンへドラッグします。
  3. しばらくするとオプション選択フォームになるので、次のように入力します（@<img>{ilovepdf-form}）。@<br>{}
     ・ページ様式：見開き@<br>{}
@@ -139,12 +139,12 @@ iLovePDFのサイトでノンブルをつけた場合、デフォルトでは「
  * ノンブルの番号は、通常は1または3から始めます（3から始めるのは表紙1と表紙2があるから）。印刷所の説明では、ノンブルは連続した番号でさえあればよく、1始まりでも3始まりでも構わないそうです@<fn>{nombre-zeroorigin}。
 //footnote[nombre-zeroorigin][技術書だからといって、ノンブルを0から始めるのは止めておきましょう。]
 
-またiLovePDF (https://www.ilovepdf.com/ja) を使う上で、次の点に注意してください。
+またiLovePDF (@<href>{https://www.ilovepdf.com/ja}) を使う上で、次の点に注意してください。
 
  * 月間で利用できるページ数やファイルサイズに上限があります。100ページあるPDFファイルで何度も試していると、あっという間に上限に達します。なので、試すときは4@<m>{\sim}8ページのPDFを使い、印刷所に入稿する直前に本番のPDF原稿を使いましょう。
  * 一度にアップロードできるPDFのサイズは、ユーザ登録なしだと10MBまで、ユーザ登録すると15MBまで、有料会員になると200MBです@<fn>{ilovepdf-limit}。画像が多い原稿の場合は、ぜひ画像を圧縮しましょう。またどうしても10MBや15MBを超える場合は、PDFを分割してアップロードするか、有料会員登録しましょう。
  * サイトがいつも正常稼働しているとは限りませんし、いつまでも継続されるという保証もないです@<fn>{ilovepdf-limit2}。利用したいけどメンテナンス中で利用できなかった（特に締め切り直前に限って！）、ということは十分あり得るので、締め切りには余裕をもって原稿を仕上げましょう。
- * もしiLovePDFが便利だと思ったら、寄付をお願いします。有料会員登録は毎月4.99ドルなのでちょっと…という人も多いと思うので、かわりに幾ばくかの寄付をしてあげてください。寄付の受付は https://www.ilovepdf.com/ja/donate です@<fn>{ilovepdf-donation}。
+ * もしiLovePDFが便利だと思ったら、寄付をお願いします。有料会員登録は毎月4.99ドルなのでちょっと…という人も多いと思うので、かわりに幾ばくかの寄付をしてあげてください。寄付の受付は @<href>{https://www.ilovepdf.com/ja/donate} です@<fn>{ilovepdf-donation}。
 //footnote[ilovepdf-limit][2017年11月現在。詳細は https://www.ilovepdf.com/ja/accounts 。]
 //footnote[ilovepdf-limit2][これはWebで提供されるサービスの宿命であり、iLovePDFに限った話ではありません。]
 //footnote[ilovepdf-donation][ただし日本からだと、PayPalは寄付金への支払いを受け付けてくれないし（「PayPalでは、現在JPの買い手からの寄付支払いはサポートされません」と言われる）、クレジットカードでの支払いもできませんでした（2017年11月現在）。]
