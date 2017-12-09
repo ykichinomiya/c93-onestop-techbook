@@ -28,7 +28,7 @@ DTP（Desk Top Publishing)と呼ばれるものが一般化した現代、ひと
 
 === Re:VIEW
 
-Re:VIEW@<fn>{Re:VIEW}は現時点ではkmuto@<fn>{kmuto}さん他40人以上の開発者が参加するオープンソースな組み版ソフトです。実際にいくつもの出版社が採用しているプロユースのソフトですが、技術系同人誌でもよく使われるなど、プロもアマチュアも使うとても便利なソフトです。
+Re:VIEW@<fn>{Re:VIEW}は現時点ではkmuto@<fn>{kmuto}さんを中心に40人以上の開発者が参加するオープンソースな組み版ソフトです。実際にいくつもの出版社が採用しているプロユースのソフトですが、技術系同人誌でもよく使われるなど、プロもアマチュアも使うとても便利なソフトです。
 //footnote[Re:VIEW][@<href>{http://reviewml.org/}]
 //footnote[kmuto][@<href>{https://github.com/kmuto}]
 
@@ -67,7 +67,9 @@ Re:VIEWでは、ASCIIで使われていた画期的な電子出版（Editor's Wo
 #@# リストの中でもRe:Viewのインライン命令を解釈してしまうので要注意
 #@# #@ で始まる行に関しても、プリプロセッサの都合があるので、こんな感じに
 
-@<list>{list-test}は実際のRe:VIEWのソースコードです。なんなら @<href>{https://github.com/onestop-techbook/c93-onestop-techbook} を開いてみてください。本書の原稿はRe:VIEWで書かれていて Github で公開されています。
+たとえば@<list>{list-test}は実際のRe:VIEWのソースコードです。
+
+もっと知りたければ、@<href>{https://github.com/onestop-techbook/c93-onestop-techbook} を開いてみてください。本書の原稿はRe:VIEWで書かれていて Github で公開されています。RubyとTeXさえ準備できれば、本書をそのままコンパイルしてPDFを生成できます。
 
 @<code>{=} で始まる行は見出しです。特に@<code>{=}のようなイコール記号が1つのものは章です。
 
@@ -120,10 +122,13 @@ MarkdownよりはマイナーですがreSTという記述形式があり、Sphin
 
 ====[column] テキストエディタ：@erukiti
 
-テキストエディタ、何を使っていますか？Windowsのメモ帳で頑張ってる強者なひともいらっしゃるかもしれませんが、エンジニアに人気のテキストエディタというと、Vim や Emacs という昔ながらのエディタもありますが、最近はよりモダンな Atom や Visual Studio Code があります。
+テキストエディタ、何を使っていますか？Windowsのメモ帳で頑張ってる強者なひともいらっしゃるかもしれませんが、エンジニアに人気のテキストエディタというと、Vim や Emacs という昔ながらのエディタもありますが、最近はよりモダンな Atom@<fn>{atom} や Visual Studio Code@<fn>{vscode} があります。
 
-Visual Studio Code（VSCode） は名前の通り Visual Studio なのでテキストエディタというよりは IDE なのですがとても軽量でテキストエディタとしてもとても良いので最近シェアを急激に伸ばしているようです。実際、本書や別の本も、Re:VIEW プラグインをインストールした VSCode で書いています。筆者が試した限りだと Atom より動作が軽量かつ、JavaScript/TypeScript での IDE としての機能が筆者にとっての必要十分なので、愛用しているエディタです。
+Visual Studio Code（VSCode）は名前の通り Visual Studio なのでテキストエディタというよりは IDE なのですがとても軽量でテキストエディタとしてもとても良いので最近シェアを急激に伸ばしているようです。実際、本書や別の本も、Re:VIEW プラグインをインストールした VSCode で書いています。筆者が試した限りだと Atom より動作が軽量かつ、JavaScript/TypeScript での IDE としての機能が筆者にとっての必要十分なので、愛用しているエディタです。
 
 Markdown で執筆する場合は、Markdown 専門のツールを使うという手もあります。Windows でも Mac でも最近はいろいろな Markdown 執筆ツールがあるので、それらを利用してみるという手もあります。最近はウェブサービスで Markdown 形式をサポートしているケースも多く、ブログを書いたりするのにも便利です。
+
+//footnote[vscode][@<href>{https://code.visualstudio.com/}]
+//footnote[atom][@<href>{https://atom.io/}]
 
 ====[/column]
