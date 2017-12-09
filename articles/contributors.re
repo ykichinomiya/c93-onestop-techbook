@@ -11,6 +11,20 @@
 #@# NqlbbcCl_400x400.jpg    カウプラン機間極東支部
 #@# RkmwJH1I_400x400.jpg    湊川あい
 #@# wQsdxU4b_400x400.jpg    なかひこくん
+#@#自己紹介ひな形↓
+#@#　←ダミー空白行用の全角スペース（embed内では上方向のスペースが有効にならないため）
+#@#//embed{
+#@#    \begin{minipage}{.1\linewidth}
+#@#        \centering
+#@#        \includegraphics[width=.75\linewidth]{images/contributors/アイコン画像ファイル}
+#@#    \end{minipage}
+#@#    \begin{minipage}{.89\linewidth}
+#@#        名前\\      %\\は改行．_を記述するときは\_
+#@#        サークル名： %ハイパーリンクは張れない
+#@#        \end{minipage}
+#@#    \hspace{1ex} %コメントとアイコンの間を空けて体裁を整える
+#@#//}
+#@# ここに一言コメントを書く
 
 == 発起人
 
@@ -117,7 +131,7 @@
 昼は1人情シスとして働きつつ、夜な夜な創作イラストを描いています。「木村拓哉タイムリープ説」の発生源の人。
 今回は多人数同時執筆に憧れて参加させていただきました。おかげさまで過去10年間の同人活動のなかでも最も超エキサイティングな経験となりました。楽しかったです。
 
-
+　
 //embed{
     \begin{minipage}{.1\linewidth}
         \centering
