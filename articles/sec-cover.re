@@ -137,6 +137,7 @@ A5	上下左右3mm	15.4cm@<m>{\times}21.6cm	436pt@<m>{\times} 612pt	同人誌で
  * フォトスク (http://photosku.com/)
  * Free.Stocker (http://free.stocker.jp/)
  * openclipart (https://openclipart.org/)
+ * pixabay (https://pixabay.com/ja/)
  * パブリックドメインQ (http://publicdomainq.net/)
  * あやえも研究所 (http://ayaemo.skr.jp/material_magic_circuit.html)
  * 佐藤漫画製作所 (http://mangaonweb.com/company/download.html)
