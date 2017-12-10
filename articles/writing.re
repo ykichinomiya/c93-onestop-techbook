@@ -86,6 +86,19 @@ Re:VIEWでは、ASCIIで使われていた画期的な電子出版（Editor's Wo
 詳しくは公式Wiki@<fn>{format-ja}をご覧ください。
 //footnote[format-ja][@<href>{https://github.com/kmuto/review/blob/master/doc/format.ja.md}]
 
+====[column]明示的に空行を入れる方法：親方
+
+Re:viewでは、2行以上の空行は無視されます。改行はbrで入れられるのですが、あとがき部分で著者ごとのコメントを明示的に区切りたい場合に困りました。
+
+暗黙の型宣言さんから、改行　全角スペース　改行とすると、よいよ、というコメントを貰いました。
+
+　
+
+全角スペースのみの段落ができますので、実質的に空行が入ります。なるほどなるほど。
+
+====[/column]
+
+
 === Markdown
 
 Markdownは技術者向けの簡易言語です。お手軽かつ、統一フォーマットとしての側面があり、Githubで使えるGFM（Github Fravored Markdown@<fn>{GFM}）が事実上の標準となっています。
