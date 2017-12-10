@@ -345,9 +345,6 @@ sys	0m3.838s
  * スクリーンショットを撮るなら、Retinaディスプレイの機種で撮ると解像度が高くなるのでお勧めです。たとえば、Retinaでない機種で撮ったスクリーンショットが72dpiで640@<m>{\times}480の大きさだとすると、同じスクリーンショットをRetinaディスプレイの機種で撮ると72dpiで1280@<m>{\times}960の大きさになります。DPIは同じですが縦と横がそれぞれ2倍の大きさになることがわかります。あとはこれを@<hd>{sec-image-dpi}で紹介した方法で144dpiに変更すれば、画像の表示サイズは同じままでより解像度が高くなるので、印刷するときれいに見えます。サンプルとして、Retina機種で撮ったスクリーンショットを@<img>{AboutThisMacbook}に、Retinaでない機種で撮ったスクリーンショットを@<img>{AboutThisMacbookAir}に載せておきますので、拡大表示して違いを見てみてください。
 //footnote[shadowless][ウィンドウスクリーンショットのシャドウを、なくすのではなく小さくする方法を探しましたが、見つかりませんでした。ご存知の方がいたらぜひ教えてください。]
 
-//image[AboutThisMacbook][Retinaディスプレイの機種で撮ったスクリーンショット]
-//image[AboutThisMacbookAir][Retinaでない機種で撮ったスクリーンショット]
-
 
 =={sec-image-conclusion} まとめ
 
@@ -360,3 +357,11 @@ Keynote.appで描いた図を画像に変換してPDFに埋め込む方法を紹
 筆者（@erukiti）は表紙、サークルカット、ポップ、値段表、さまざまなところでKeynoteを活用しています。
 
 ====[/column]
+
+
+//embed[latex]{
+  \newpage
+//}
+
+//image[AboutThisMacbook][Retinaディスプレイの機種で撮ったスクリーンショット]
+//image[AboutThisMacbookAir][Retinaでない機種で撮ったスクリーンショット]
