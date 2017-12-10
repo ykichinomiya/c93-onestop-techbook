@@ -13,13 +13,13 @@ macOSでKeynote.appを使って図を作成し、原稿に埋め込む方法を�
 
 Keynote.appをまだインストールしてない場合は、インストールしましょう。
 
- 1. 画面左上のアップルメニュー（リンゴのアイコン）をクリックし、「App Store...」を選びます。
- 2. App Storeアプリが起動するので、右上の検索欄で「Keynote」と入力し、Returnキーを押します。
- 3. 検索結果のいちばん最初に「Keynote」が出てくるので、「入手」をクリックしてインストールします。
+ 1. 画面左上隅にあるリンゴのアイコンをクリックし、「App Store...」を選びます。
+ 2. App Storeアプリが起動したら、右上の検索欄で「Keynote」と入力しReturnを押します。
+ 3. 検索結果のいちばん最初に「Keynote」が出てくるので、「入手」をクリックします。
 
 これでKeynote.appがインストールされました。Finder.appで「アプリケーション」フォルダを見ると、「Keynote.app」があるはずです（@<img>{keynote-installed}）。
 
-//image[keynote-installed][「アプリケーション」フォルダに「Keynote.app」がインストールされる][scale=0.9]
+//image[keynote-installed][「アプリケーション」フォルダに「Keynote.app」がインストールされる][scale=0.82]
 
 
 =={sec-image-draw} Keynote.appで作図する
