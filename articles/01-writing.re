@@ -110,10 +110,6 @@ $ brew cask install mactex
 //footnote[rbenv][@<href>{https://github.com/rbenv/rbenv}]
 //footnote[anyenv+rbenv][@<href>{https://github.com/riywo/anyenv}]
 
-=== Windows Subsystem for Linux （Windows10）で環境を構築する
-
-#@# 自分でも実験してみるつもりだけど、誰か書ける人かいてくれると嬉しい by @erukiti
-
 === Windows で環境を構築する
 
 TeXのインストールには、TeXLive@<fn>{TeXLive}を使うのが最近の鉄板のようです。
@@ -122,7 +118,7 @@ TeXのインストールには、TeXLive@<fn>{TeXLive}を使うのが最近の�
 Rubyのインストールには、RubyInstaller@<fn>{ruby-installer2}を使うといいようです。
 //footnote[ruby-installer2][@<href>{https://github.com/oneclick/rubyinstaller2/releases}]
 
-Windows 7にTeX（W32TeX）とRubyを使ってRe:VIEW環境を構築する方法を@<chap>{sec-windows7-installation}にまとめています。
+TeX（W32TeX）とRubyを使ってWindows 7上にRe:VIEW環境を構築する方法を@<chap>{sec-windows7-installation}にまとめています。
 
 ====[column] 技術書はWordでも書ける　：親方
 

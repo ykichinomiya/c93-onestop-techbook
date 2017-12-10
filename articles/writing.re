@@ -22,7 +22,7 @@ DTP（Desk Top Publishing)と呼ばれるものが一般化した現代、ひと
   * Markdown
   * HTML+CSS
   * Sphinx
-　* TeX/LaTeX
+  * TeX/LaTeX
 
 だいたいここらへんが人気あるところでしょうか。いずれも、本文を書いて、体裁に関する命令を間にはさみ、コンパイルするとpdfなどの入稿可能なファイルが出力されます。
 
