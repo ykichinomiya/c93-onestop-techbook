@@ -113,7 +113,7 @@ Re:VIEWの原稿に図を埋め込んだ際、思ったより大きくなった�
 
 =={sec-image-win7-dpi} 出力される画像の解像度を上げる
 
-前小節の方法で変換された画像の解像度は、全て96 DPI@<fn>{WHAT_IS_DPI}です。
+前節の方法で変換された画像の解像度は、全て96 DPI@<fn>{WHAT_IS_DPI}です。
 これはPowerPointの標準設定のようです@<fn>{STD_DPI}。
 @<chap>{sec-image}では、三通りの方法で解像度を変更していましたが、そのうち三つ目（@<tt>{ImageMagick}の@<tt>{convert}コマンドを使う方法）はWindowsでも可能です。
 
