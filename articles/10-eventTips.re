@@ -143,7 +143,7 @@
 
 フリーで使用可能なフォント内で、使用に適したフォントの例としては、源ノ角ゴシック@<fn>{genno}があげられます。
 
-//foonote[genno][https://github.com/adobe-fonts/source-han-sans/]
+//footnote[genno][https://github.com/adobe-fonts/source-han-sans/]
 
 ===== ダウンロードできるかの確認は怠りなく
 
@@ -153,14 +153,5 @@
 
 イベントの参加要項では義務付けられてない場合もありますが、ダウンロード時の技術時なトラブルの
 サポートに備えて、メールアドレスやWebフォームなど連絡先を用意しておくことをおすすめします。
-
-
-
-
-
-
-
-
-
 
 ====[/column]
